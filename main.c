@@ -19,34 +19,34 @@ int main() {
     int i, j;
 
 //------------chargement initial-------------------------------
+//
+//            Ouvrire(&fichier, "PERSONNEL-ANP_DZ.dat", 'N');
+//            Ouvrire(&fich, "MILITAIRE_INDEX.idx", 'N');
+//            Ouvrire(&Fi, "FORCE_ARME_INDEX.idx", 'N');
+//            Ouvrire(&F, "GRADE_INDEX.idx", 'N');
+//            Lecture = 0;
+//            Ecriture = 0;
+//            chargementInitial(fichier, 100000);
+//            printf("le cout de chargement initial est %d lecture et %d ecriture\n", Lecture, Ecriture);
+//            printfFichier("PERSONNEL-ANP_DZ.dat");
+//            printf("test\n");
+//            Fermer(fichier);
+//            Sauvegarde_IndexM(fich, indexM);
+//            Sauvegarde_IndexM(Fi, indexF);
+//            Sauvegarde_IndexM(F, indexG);
+//            Fermer(fich);
+//            Fermer(Fi);
+//            Fermer(F);
+//            printGradeIndex("GRADE_INDEX.idx");
+//            printMilitaireIndex("MILITAIRE_INDEX.idx");
+//            printForceIndex("FORCE_ARME_INDEX.idx");
 
-            Ouvrire(&fichier, "PERSONNEL-ANP_DZ.dat", 'N');
-            Ouvrire(&fich, "MILITAIRE_INDEX.idx", 'N');
-            Ouvrire(&Fi, "FORCE_ARME_INDEX.idx", 'N');
-            Ouvrire(&F, "GRADE_INDEX.idx", 'N');
-            Lecture = 0;
-            Ecriture = 0;
-            chargementInitial(fichier, 100000);
-            printf("le cout de chargement initial est %d lecture et %d ecriture\n", Lecture, Ecriture);
-            printfFichier("PERSONNEL-ANP_DZ.dat");
-            printf("test\n");
-            Fermer(fichier);
-            Sauvegarde_IndexM(fich, indexM);
-            Sauvegarde_IndexM(Fi, indexF);
-            Sauvegarde_IndexM(F, indexG);
-            Fermer(fich);
-            Fermer(Fi);
-            Fermer(F);
-            printGradeIndex("GRADE_INDEX.idx");
-            printMilitaireIndex("MILITAIRE_INDEX.idx");
-            printForceIndex("FORCE_ARME_INDEX.idx");
-
-  //--------------------chafrgement d'index--------------------------
+    //--------------------chafrgement d'index--------------------------
 
 //                Chargement_index(&indexP);
 //            affichIndexPrimaire(indexP);
 
- //---------------------sauvgard d'indx------------------------------
+    //---------------------sauvgard d'indx------------------------------
 
 //            Sauvegarde_Index(indexP);
 
@@ -59,7 +59,7 @@ int main() {
 //    Chargement_indexM(fich, &indexM);
 //            Lecture = 0;
 //            Ecriture = 0;
-//            Rech_Militaires(320697, &i, &j, fichier);
+//            Rech_Militaires(701507, &i, &j, fichier);
 //            printf("le cout de recherche par matricule est %d lecture et %d ecriture\n", Lecture, Ecriture);
 //    Fermer(fichier);
 //    Fermer(fich);
@@ -74,8 +74,6 @@ int main() {
 //    Chargement_indexM(fich, &indexM);
 //    Chargement_indexM(Fi, &indexF);
 //    Chargement_indexM(F, &indexG);
-//    Lecture = 0;
-//    Ecriture = 0;
 //    Chargement_index(&indexP);
 //    tenrg1 = creerEnrg();
 //    Lecture = 0;Ecriture = 0;
@@ -107,7 +105,9 @@ int main() {
 //    Chargement_indexM(F,&indexG);
 //    printf("***************avant*********************\n");
 //    printfFichier("PERSONNEL-ANP_DZ.dat");
-//    suppersionEnrg(fic,999998,&indexP);
+//    Lecture =0;Ecriture = 0;
+//    suppersionEnrg(fic,869428,&indexP);
+//    printf("le cout de suppression est %d lecture et %d ecriture\n",Lecture,Ecriture);
 //    Sauvegarde_Index(indexP);
 //    Sauvegarde_IndexM(Fi,indexM);
 //    Sauvegarde_IndexM(fich,indexF);
@@ -129,28 +129,37 @@ int main() {
 
 //----------------------modification d'une region militaire----------------
 
-//            Chargement_index(&indexP);
-//            printfFichier("PERSONNEL-ANP_DZ.dat");
-//            printf("******************************************\n");
-//            modifRegionMelitaire(480199,"1RM-Blida");
-//            printfFichier("PERSONNEL-ANP_DZ.dat");
-//            printf("******************************************\n");
+//    Chargement_index(&indexP);
+//    printfFichier("PERSONNEL-ANP_DZ.dat");
+//    printf("******************************************\n");
+//    Lecture = 0;
+//    Ecriture = 0;
+//    modifRegionMelitaire(239296, "1RM-Blida");
+//    printf("le cout de modification est %d lecture et %d ecriture\n", Lecture, Ecriture);
+//    printfFichier("PERSONNEL-ANP_DZ.dat");
+//    printf("******************************************\n");
 
 //----------------------affichage des militaires d'une region militaire dans un intervalle donne----------------
 
 //        Chargement_index(&indexP);
-//        affichMilitaireIntervalle(400000, 500000);
+//        Lecture= 0;Ecriture = 0;
+//        affichMilitaireIntervalle(100000, 900000);
+//        printf("le cout de affichage est %d lecture et %d ecriture\n",Lecture,Ecriture);
 
 //-----------------------affichage des militaires dans un intervalle d'age d'une region militaire donne----------------
 
 //    Ouvrire(&Fi,"MILITAIRE_INDEX.idx",'A');
 //            Chargement_indexM(Fi,&indexM);
 //        Chargement_index(&indexP);
+//        Lecture = 0;Ecriture = 0;
 //        rechIntervaleAgeRegion("5RM-Constantine", 17, 18);
+//        printf("le cout de recherche est %d lecture et %d ecriture\n",Lecture,Ecriture);
 
 
 // -------------------------suppression d'une force arme-----------------------
-//        supprimerForceArme("Marine_nationale");
+//        Lecture = 0;Ecriture = 0;
+//        supprimerForceArme("Armee_de_l’air");
+//        printf("le cout de suppression est %d lecture et %d ecriture\n",Lecture,Ecriture);
 //        printIndexPrimaire("MATRICULE_INDEX.idx");
 //        printf("***************apres*********************\n");
 //        printForceIndex("FORCE_ARME_INDEX.idx");
@@ -169,29 +178,31 @@ int main() {
 
 //------------------------fragmentation-----------------------
 
-//        Ouvrire(&fich, "PERSONNEL-ANP_DZ.dat", 'A');
-//        Ouvrire(&Fi,"MILITAIRE_INDEX.idx",'A');
-//        Chargement_index(&indexP);
-//        Chargement_indexM(Fi,&indexM);
-//        Fragmentation(fich);
-//        Fermer(fich);
-//        Fermer(Fi);
-//        printf("***************apres*********************\n");
-//        printfFichier("PERSONNEL-ANP_DZ.dat(1RM-Blida)");
-//        printf("***************apres*********************\n");
-//        printfFichier("PERSONNEL-ANP_DZ.dat(2RM-Oran)");
-//        printf("***************apres*********************\n");
-//        printfFichier("PERSONNEL-ANP_DZ.dat(3RM-Bechar)");
-//        printf("***************apres*********************\n");
-//
-//        printfFichier("PERSONNEL-ANP_DZ.dat(4RM-Ouargla)");
-//        printf("***************apres*********************\n");
-//
-//        printfFichier("PERSONNEL-ANP_DZ.dat(5RM-Constantine)");
-//        printf("***************apres*********************\n");
-//
-//        printfFichier("PERSONNEL-ANP_DZ.dat(6RM-Tamanrasset)");
-//        printf("***************apres*********************\n");
+        Ouvrire(&fich, "PERSONNEL-ANP_DZ.dat", 'A');
+        Ouvrire(&Fi,"MILITAIRE_INDEX.idx",'A');
+        Chargement_index(&indexP);
+        Chargement_indexM(Fi,&indexM);
+        Lecture = 0;Ecriture = 0;
+        Fragmentation(fich);
+        printf("le cout de fragmentation est %d lecture et %d ecriture\n",Lecture,Ecriture);
+        Fermer(fich);
+        Fermer(Fi);
+        printf("***************apres*********************\n");
+        printfFichier("PERSONNEL-ANP_DZ.dat(1RM-Blida)");
+        printf("***************apres*********************\n");
+        printfFichier("PERSONNEL-ANP_DZ.dat(2RM-Oran)");
+        printf("***************apres*********************\n");
+        printfFichier("PERSONNEL-ANP_DZ.dat(3RM-Bechar)");
+        printf("***************apres*********************\n");
+
+        printfFichier("PERSONNEL-ANP_DZ.dat(4RM-Ouargla)");
+        printf("***************apres*********************\n");
+
+        printfFichier("PERSONNEL-ANP_DZ.dat(5RM-Constantine)");
+        printf("***************apres*********************\n");
+
+        printfFichier("PERSONNEL-ANP_DZ.dat(6RM-Tamanrasset)");
+        printf("***************apres*********************\n");
 
 
 
