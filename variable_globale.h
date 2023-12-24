@@ -63,7 +63,7 @@ typedef struct Ienrg{
     Adress adress;
 }Ienrg;
 typedef struct Index{
-   Ienrg tab[100010];//
+   Ienrg tab[00010];//
     int nb ;//le nombre de enrg dans le tableau d'index primaire
 }Index;
 

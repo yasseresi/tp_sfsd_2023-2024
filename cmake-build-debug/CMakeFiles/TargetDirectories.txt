@@ -1,0 +1,3 @@
+/Users/Apple/Desktop/tp_sfsd_2023-2024/cmake-build-debug/CMakeFiles/tp_sfsd_2023_2024.dir
+/Users/Apple/Desktop/tp_sfsd_2023-2024/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/Apple/Desktop/tp_sfsd_2023-2024/cmake-build-debug/CMakeFiles/rebuild_cache.dir
