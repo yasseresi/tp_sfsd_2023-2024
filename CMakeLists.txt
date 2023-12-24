@@ -1,17 +1,14 @@
 cmake_minimum_required(VERSION 3.27)
-project(tp_sfsd_2023_2024 C)
+project(TP_SFSD_2023_KERMI C)
 
-set(CMAKE_C_STANDARD 11)
+set(CMAKE_C_STANDARD 90)
 
-include_directories(.)
-
-add_executable(tp_sfsd_2023_2024
-        affichage.c
-        affichage.h
+add_executable(TP_SFSD_2023_KERMI main.c
         fonction.c
         fonction.h
         machine_abtraite.c
         machine_abtraite.h
-        main.c
         variable_globale.c
-        variable_globale.h)
+        variable_globale.h
+        affichage.c
+        affichage.h)

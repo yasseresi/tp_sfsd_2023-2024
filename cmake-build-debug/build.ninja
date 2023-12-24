@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: tp_sfsd_2023_2024
+# Project: TP_SFSD_2023_KERMI
 # Configurations: Debug
 # =============================================================================
 
@@ -41,75 +41,70 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /Users/Apple/Desktop/tp_sfsd_2023-2024/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target tp_sfsd_2023_2024
+# Object build statements for EXECUTABLE target TP_SFSD_2023_KERMI
 
 
 #############################################
-# Order-only phony target for tp_sfsd_2023_2024
+# Order-only phony target for TP_SFSD_2023_KERMI
 
-build cmake_object_order_depends_target_tp_sfsd_2023_2024: phony || CMakeFiles/tp_sfsd_2023_2024.dir
+build cmake_object_order_depends_target_TP_SFSD_2023_KERMI: phony || CMakeFiles/TP_SFSD_2023_KERMI.dir
 
-build CMakeFiles/tp_sfsd_2023_2024.dir/affichage.c.o: C_COMPILER__tp_sfsd_2023_2024_unscanned_Debug /Users/Apple/Desktop/tp_sfsd_2023-2024/affichage.c || cmake_object_order_depends_target_tp_sfsd_2023_2024
-  DEP_FILE = CMakeFiles/tp_sfsd_2023_2024.dir/affichage.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
-  INCLUDES = -I/Users/Apple/Desktop/tp_sfsd_2023-2024/.
-  OBJECT_DIR = CMakeFiles/tp_sfsd_2023_2024.dir
-  OBJECT_FILE_DIR = CMakeFiles/tp_sfsd_2023_2024.dir
-  TARGET_COMPILE_PDB = CMakeFiles/tp_sfsd_2023_2024.dir/
-  TARGET_PDB = tp_sfsd_2023_2024.pdb
+build CMakeFiles/TP_SFSD_2023_KERMI.dir/main.c.o: C_COMPILER__TP_SFSD_2023_KERMI_unscanned_Debug /Users/Apple/Desktop/tp_sfsd_2023-2024/main.c || cmake_object_order_depends_target_TP_SFSD_2023_KERMI
+  DEP_FILE = CMakeFiles/TP_SFSD_2023_KERMI.dir/main.c.o.d
+  FLAGS = -g -std=gnu90 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/TP_SFSD_2023_KERMI.dir
+  OBJECT_FILE_DIR = CMakeFiles/TP_SFSD_2023_KERMI.dir
+  TARGET_COMPILE_PDB = CMakeFiles/TP_SFSD_2023_KERMI.dir/
+  TARGET_PDB = TP_SFSD_2023_KERMI.pdb
 
-build CMakeFiles/tp_sfsd_2023_2024.dir/fonction.c.o: C_COMPILER__tp_sfsd_2023_2024_unscanned_Debug /Users/Apple/Desktop/tp_sfsd_2023-2024/fonction.c || cmake_object_order_depends_target_tp_sfsd_2023_2024
-  DEP_FILE = CMakeFiles/tp_sfsd_2023_2024.dir/fonction.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
-  INCLUDES = -I/Users/Apple/Desktop/tp_sfsd_2023-2024/.
-  OBJECT_DIR = CMakeFiles/tp_sfsd_2023_2024.dir
-  OBJECT_FILE_DIR = CMakeFiles/tp_sfsd_2023_2024.dir
-  TARGET_COMPILE_PDB = CMakeFiles/tp_sfsd_2023_2024.dir/
-  TARGET_PDB = tp_sfsd_2023_2024.pdb
+build CMakeFiles/TP_SFSD_2023_KERMI.dir/fonction.c.o: C_COMPILER__TP_SFSD_2023_KERMI_unscanned_Debug /Users/Apple/Desktop/tp_sfsd_2023-2024/fonction.c || cmake_object_order_depends_target_TP_SFSD_2023_KERMI
+  DEP_FILE = CMakeFiles/TP_SFSD_2023_KERMI.dir/fonction.c.o.d
+  FLAGS = -g -std=gnu90 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/TP_SFSD_2023_KERMI.dir
+  OBJECT_FILE_DIR = CMakeFiles/TP_SFSD_2023_KERMI.dir
+  TARGET_COMPILE_PDB = CMakeFiles/TP_SFSD_2023_KERMI.dir/
+  TARGET_PDB = TP_SFSD_2023_KERMI.pdb
 
-build CMakeFiles/tp_sfsd_2023_2024.dir/machine_abtraite.c.o: C_COMPILER__tp_sfsd_2023_2024_unscanned_Debug /Users/Apple/Desktop/tp_sfsd_2023-2024/machine_abtraite.c || cmake_object_order_depends_target_tp_sfsd_2023_2024
-  DEP_FILE = CMakeFiles/tp_sfsd_2023_2024.dir/machine_abtraite.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
-  INCLUDES = -I/Users/Apple/Desktop/tp_sfsd_2023-2024/.
-  OBJECT_DIR = CMakeFiles/tp_sfsd_2023_2024.dir
-  OBJECT_FILE_DIR = CMakeFiles/tp_sfsd_2023_2024.dir
-  TARGET_COMPILE_PDB = CMakeFiles/tp_sfsd_2023_2024.dir/
-  TARGET_PDB = tp_sfsd_2023_2024.pdb
+build CMakeFiles/TP_SFSD_2023_KERMI.dir/machine_abtraite.c.o: C_COMPILER__TP_SFSD_2023_KERMI_unscanned_Debug /Users/Apple/Desktop/tp_sfsd_2023-2024/machine_abtraite.c || cmake_object_order_depends_target_TP_SFSD_2023_KERMI
+  DEP_FILE = CMakeFiles/TP_SFSD_2023_KERMI.dir/machine_abtraite.c.o.d
+  FLAGS = -g -std=gnu90 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/TP_SFSD_2023_KERMI.dir
+  OBJECT_FILE_DIR = CMakeFiles/TP_SFSD_2023_KERMI.dir
+  TARGET_COMPILE_PDB = CMakeFiles/TP_SFSD_2023_KERMI.dir/
+  TARGET_PDB = TP_SFSD_2023_KERMI.pdb
 
-build CMakeFiles/tp_sfsd_2023_2024.dir/main.c.o: C_COMPILER__tp_sfsd_2023_2024_unscanned_Debug /Users/Apple/Desktop/tp_sfsd_2023-2024/main.c || cmake_object_order_depends_target_tp_sfsd_2023_2024
-  DEP_FILE = CMakeFiles/tp_sfsd_2023_2024.dir/main.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
-  INCLUDES = -I/Users/Apple/Desktop/tp_sfsd_2023-2024/.
-  OBJECT_DIR = CMakeFiles/tp_sfsd_2023_2024.dir
-  OBJECT_FILE_DIR = CMakeFiles/tp_sfsd_2023_2024.dir
-  TARGET_COMPILE_PDB = CMakeFiles/tp_sfsd_2023_2024.dir/
-  TARGET_PDB = tp_sfsd_2023_2024.pdb
+build CMakeFiles/TP_SFSD_2023_KERMI.dir/variable_globale.c.o: C_COMPILER__TP_SFSD_2023_KERMI_unscanned_Debug /Users/Apple/Desktop/tp_sfsd_2023-2024/variable_globale.c || cmake_object_order_depends_target_TP_SFSD_2023_KERMI
+  DEP_FILE = CMakeFiles/TP_SFSD_2023_KERMI.dir/variable_globale.c.o.d
+  FLAGS = -g -std=gnu90 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/TP_SFSD_2023_KERMI.dir
+  OBJECT_FILE_DIR = CMakeFiles/TP_SFSD_2023_KERMI.dir
+  TARGET_COMPILE_PDB = CMakeFiles/TP_SFSD_2023_KERMI.dir/
+  TARGET_PDB = TP_SFSD_2023_KERMI.pdb
 
-build CMakeFiles/tp_sfsd_2023_2024.dir/variable_globale.c.o: C_COMPILER__tp_sfsd_2023_2024_unscanned_Debug /Users/Apple/Desktop/tp_sfsd_2023-2024/variable_globale.c || cmake_object_order_depends_target_tp_sfsd_2023_2024
-  DEP_FILE = CMakeFiles/tp_sfsd_2023_2024.dir/variable_globale.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
-  INCLUDES = -I/Users/Apple/Desktop/tp_sfsd_2023-2024/.
-  OBJECT_DIR = CMakeFiles/tp_sfsd_2023_2024.dir
-  OBJECT_FILE_DIR = CMakeFiles/tp_sfsd_2023_2024.dir
-  TARGET_COMPILE_PDB = CMakeFiles/tp_sfsd_2023_2024.dir/
-  TARGET_PDB = tp_sfsd_2023_2024.pdb
+build CMakeFiles/TP_SFSD_2023_KERMI.dir/affichage.c.o: C_COMPILER__TP_SFSD_2023_KERMI_unscanned_Debug /Users/Apple/Desktop/tp_sfsd_2023-2024/affichage.c || cmake_object_order_depends_target_TP_SFSD_2023_KERMI
+  DEP_FILE = CMakeFiles/TP_SFSD_2023_KERMI.dir/affichage.c.o.d
+  FLAGS = -g -std=gnu90 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/TP_SFSD_2023_KERMI.dir
+  OBJECT_FILE_DIR = CMakeFiles/TP_SFSD_2023_KERMI.dir
+  TARGET_COMPILE_PDB = CMakeFiles/TP_SFSD_2023_KERMI.dir/
+  TARGET_PDB = TP_SFSD_2023_KERMI.pdb
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target tp_sfsd_2023_2024
+# Link build statements for EXECUTABLE target TP_SFSD_2023_KERMI
 
 
 #############################################
-# Link the executable tp_sfsd_2023_2024
+# Link the executable TP_SFSD_2023_KERMI
 
-build tp_sfsd_2023_2024: C_EXECUTABLE_LINKER__tp_sfsd_2023_2024_Debug CMakeFiles/tp_sfsd_2023_2024.dir/affichage.c.o CMakeFiles/tp_sfsd_2023_2024.dir/fonction.c.o CMakeFiles/tp_sfsd_2023_2024.dir/machine_abtraite.c.o CMakeFiles/tp_sfsd_2023_2024.dir/main.c.o CMakeFiles/tp_sfsd_2023_2024.dir/variable_globale.c.o
+build TP_SFSD_2023_KERMI: C_EXECUTABLE_LINKER__TP_SFSD_2023_KERMI_Debug CMakeFiles/TP_SFSD_2023_KERMI.dir/main.c.o CMakeFiles/TP_SFSD_2023_KERMI.dir/fonction.c.o CMakeFiles/TP_SFSD_2023_KERMI.dir/machine_abtraite.c.o CMakeFiles/TP_SFSD_2023_KERMI.dir/variable_globale.c.o CMakeFiles/TP_SFSD_2023_KERMI.dir/affichage.c.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.6
-  OBJECT_DIR = CMakeFiles/tp_sfsd_2023_2024.dir
+  OBJECT_DIR = CMakeFiles/TP_SFSD_2023_KERMI.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/tp_sfsd_2023_2024.dir/
-  TARGET_FILE = tp_sfsd_2023_2024
-  TARGET_PDB = tp_sfsd_2023_2024.pdb
+  TARGET_COMPILE_PDB = CMakeFiles/TP_SFSD_2023_KERMI.dir/
+  TARGET_FILE = TP_SFSD_2023_KERMI
+  TARGET_PDB = TP_SFSD_2023_KERMI.pdb
 
 
 #############################################
@@ -145,7 +140,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/Apple/Desktop/tp_sfsd_2023-2024/cmake-build-debug
 
-build all: phony tp_sfsd_2023_2024
+build all: phony TP_SFSD_2023_KERMI
 
 # =============================================================================
 # Built-in targets
