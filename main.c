@@ -177,32 +177,32 @@ int main() {
 
 
 //------------------------fragmentation-----------------------
-
-        Ouvrire(&fich, "PERSONNEL-ANP_DZ.dat", 'A');
-        Ouvrire(&Fi,"MILITAIRE_INDEX.idx",'A');
-        Chargement_index(&indexP);
-        Chargement_indexM(Fi,&indexM);
-        Lecture = 0;Ecriture = 0;
-        Fragmentation(fich);
-        printf("le cout de fragmentation est %d lecture et %d ecriture\n",Lecture,Ecriture);
-        Fermer(fich);
-        Fermer(Fi);
-        printf("***************apres*********************\n");
-        printfFichier("PERSONNEL-ANP_DZ.dat(1RM-Blida)");
-        printf("***************apres*********************\n");
-        printfFichier("PERSONNEL-ANP_DZ.dat(2RM-Oran)");
-        printf("***************apres*********************\n");
-        printfFichier("PERSONNEL-ANP_DZ.dat(3RM-Bechar)");
-        printf("***************apres*********************\n");
-
-        printfFichier("PERSONNEL-ANP_DZ.dat(4RM-Ouargla)");
-        printf("***************apres*********************\n");
-
-        printfFichier("PERSONNEL-ANP_DZ.dat(5RM-Constantine)");
-        printf("***************apres*********************\n");
-
-        printfFichier("PERSONNEL-ANP_DZ.dat(6RM-Tamanrasset)");
-        printf("***************apres*********************\n");
+//
+//        Ouvrire(&fich, "PERSONNEL-ANP_DZ.dat", 'A');
+//        Ouvrire(&Fi,"MILITAIRE_INDEX.idx",'A');
+//        Chargement_index(&indexP);
+//        Chargement_indexM(Fi,&indexM);
+//        Lecture = 0;Ecriture = 0;
+//        Fragmentation(fich);
+//        printf("le cout de fragmentation est %d lecture et %d ecriture\n",Lecture,Ecriture);
+//        Fermer(fich);
+//        Fermer(Fi);
+//        printf("***************apres*********************\n");
+//        printfFichier("PERSONNEL-ANP_DZ.dat(1RM-Blida)");
+//        printf("***************apres*********************\n");
+//        printfFichier("PERSONNEL-ANP_DZ.dat(2RM-Oran)");
+//        printf("***************apres*********************\n");
+//        printfFichier("PERSONNEL-ANP_DZ.dat(3RM-Bechar)");
+//        printf("***************apres*********************\n");
+//
+//        printfFichier("PERSONNEL-ANP_DZ.dat(4RM-Ouargla)");
+//        printf("***************apres*********************\n");
+//
+//        printfFichier("PERSONNEL-ANP_DZ.dat(5RM-Constantine)");
+//        printf("***************apres*********************\n");
+//
+//        printfFichier("PERSONNEL-ANP_DZ.dat(6RM-Tamanrasset)");
+//        printf("***************apres*********************\n");
 
 
 
