@@ -14,6 +14,12 @@
 
 
 
+/**
+ * Calculates the age based on the birth date and returns the actual age.
+ *
+ * @param birthDate The birth date of the person.
+ * @return The calculated age.
+ */
 int calculateAge(date birthDate) {
     currentDate.day = 1;
     currentDate.month = 12;
@@ -29,6 +35,14 @@ int calculateAge(date birthDate) {
     return age;
 }
 
+//************************************************************************
+
+/**
+ * Returns the index of a military region based on its name.
+ *
+ * @param region The name of the military region.
+ * @return The index of the military region, or -1 if not found.
+ */
 int getIndiceMilitaire(char* region){
     int indice;
     for (int i = 0; i < 6; ++i) {
@@ -39,8 +53,16 @@ int getIndiceMilitaire(char* region){
     return indice;
 }
 
+//************************************************************************
+
+/**
+ * Returns the index of the given forceArme in the armedForces array.
+ *
+ * @param forceArme The forceArme to search for.
+ * @return The index of the forceArme in the armedForces array, or -1 if not found.
+ */
 int getIndiceForce(char* forceArme){
-    int indice;
+    int indice ;
     for (int i = 0; i < 8; ++i) {
         if(strcmp(forceArme,armedForces[i])==0){
             indice = i;
@@ -48,6 +70,14 @@ int getIndiceForce(char* forceArme){
     }
     return indice;
 }
+//************************************************************************
+
+/**
+ * Returns the index of a military grade in the array `militaryGrades`.
+ * 
+ * @param grade The military grade to search for.
+ * @return The index of the military grade in the array `militaryGrades`.
+ */
 int getIndiceGrade(char* grade){
     int indice;
     for (int i = 0; i < 19; ++i) {
@@ -68,8 +98,21 @@ int getIndiceGrade(char* grade){
     }
     return indice;
 }
+
+//************************************************************************
+
+
+/**
+ * @brief Gets the index of a grade in the Grades array.
+ * 
+ * This function takes a grade as input and searches for its index in the Grades array.
+ * The Grades array is assumed to contain 5 grades.
+ * 
+ * @param grade The grade to search for.
+ * @return The index of the grade in the Grades array. If the grade is not found, -1 is returned.
+ */
 int getGrade(char *grade){
-    int indice;
+    int indice = -1;
     for (int i = 0; i < 5; ++i) {
         if(strcmp(grade,Grades[i])==0){
             indice = i;
@@ -77,12 +120,122 @@ int getGrade(char *grade){
     }
     return indice;
 }
-const char* getRegionAssocie( int indice){
+
+/**
+ * Returns the military region associated with the given index.
+ *
+ * @param indice The index of the military region.
+ * @return The military region associated with the given index.
+ */
+const char* getRegionAssocie(int indice) {
     return militaryRegions[indice];
 }
-const char* getForceAssocie( int indice){
+
+/**
+ * Retrieves the associated military region based on the given index.
+ *
+ * @param indice The index of the military region.
+ * @return The associated military region as a string.
+ */
+const char* getRegionAssocie(int indice) {
+    return militaryRegions[indice];
+}
+
+/**
+ * Retrieves the associated military region based on the given index.
+ *
+ * @param indice The index of the military region.
+ * @return The associated military region as a string.
+ */
+const char* getRegionAssocie(int indice) {
+    return militaryRegions[indice];
+}
+
+/**
+ * Retrieves the associated military region based on the given index.
+ *
+ * @param index The index of the military region.
+ * @return The associated military region.
+ */
+const char* getRegionAssocie(int indice) {
+    return militaryRegions[indice];
+}
+
+/**
+ * Retrieves the associated military region based on the given index.
+ *
+ * @param index The index of the military region.
+ * @return The name of the military region.
+ */
+const char* getRegionAssocie(int indice) {
+    return militaryRegions[indice];
+}
+
+/**
+ * Returns the military region associated with the given index.
+ *
+ * @param indice The index of the military region.
+ * @return The military region associated with the given index.
+ */
+const char* getRegionAssocie(int indice) {
+    return militaryRegions[indice];
+}
+
+/**
+ * Retrieves the associated military region based on the given index.
+ *
+ * @param indice The index of the military region.
+ * @return The associated military region as a string.
+ */
+const char* getRegionAssocie(int indice) {
+    return militaryRegions[indice];
+}
+/**
+ * Retrieves the associated military region based on the given index.
+ *
+ * @param indice The index of the military region.
+ * @return The associated military region as a string.
+ */
+const char* getRegionAssocie(int indice) {
+    return militaryRegions[indice];
+}
+
+/**
+ * Retrieves the associated military region based on the given index.
+ *
+ * @param indice The index of the military region.
+ * @return The associated military region as a string.
+ */
+const char* getRegionAssocie(int indice) {
+    return militaryRegions[indice];
+}
+
+/**
+ * Retrieves the associated military region based on the given index.
+ *
+ * @param indice The index of the military region.
+ * @return The associated military region as a string.
+ */
+const char* getRegionAssocie(int indice) {
+    return militaryRegions[indice];
+}
+
+
+/**
+ * Retrieves the associated armed force based on the given index.
+ *
+ * @param indice The index of the armed force.
+ * @return The associated armed force as a string.
+ */
+const char* getForceAssocie(int indice) {
     return armedForces[indice];
 }
+/**
+ * Retrieves the grade associated with the given index.
+ *
+ * @param indice The index of the grade to retrieve.
+ * @return The grade associated with the given index.
+ */
 const char* getGradeAssocie(int indice){
     return Grades[indice];
 }
@@ -317,6 +470,16 @@ void rechDicoTableIndex(int key, bool *trouv, int *k, Index index) {
     *k = j2;
 }
 
+//**************************************************************
+
+/**
+ * Sequential search in the Secondary index array and returns the position and found.
+ * 
+ * @param cle The key to search for in the Secondary index array.
+ * @param trouv A pointer to a boolean variable that will be set to true if the key is found, otherwise false.
+ * @param pos A pointer to an integer variable that will hold the position of the key in the Secondary index array.
+ * @param index The Secondary index array in which to perform the search.
+ */
 void rechTableIndexM(int cle, bool *trouv, int *pos, IndexM index) {
     *trouv = false;
     for (int i = 0; i < index.nb; i++) {
@@ -344,6 +507,18 @@ void insertionIndex(Ienrg ienrg, int pos, Index *index) {
     index->tab[pos] = ienrg;
     index->nb += 1;
 }
+
+//**************************************************************
+
+/**
+ * Inserts a record into the secondary index.
+ *
+ * This function inserts a record into the secondary index by assigning the given
+ * index value and key to the next available position in the index table.
+ *
+ * @param menrg The record to be inserted into the secondary index.
+ * @param index The secondary index structure.
+ */
 void insertionIndexS(Menrg menrg, IndexM *index){
     int m = index->nb;
     int i = 0;
@@ -353,6 +528,16 @@ void insertionIndexS(Menrg menrg, IndexM *index){
     index->nb += 1;
 }
 
+//**************************************************************
+
+/**
+ * Searches for a military personnel based on their matricule in a given file.
+ * 
+ * @param matricule The matricule of the military personnel to search for.
+ * @param i Pointer to store the block number where the military personnel is found.
+ * @param j Pointer to store the record number where the military personnel is found.
+ * @param fichier The file to search in.
+ */
 void Rech_Militaires(int matricule, int *i, int *j, FILE *fichier) {
     *i = 0;
     *j = 0;
