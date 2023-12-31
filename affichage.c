@@ -35,7 +35,7 @@ void affichIndexGrade(IndexM index){
 
 
 void printfFichier(char *nomFichier) {
-    FILE *f = NULL;
+    FILE *f ;
     int s = 1024;
     Ouvrire(&f, nomFichier, 'A');
     for (int i = 1; i <= entete(f, 1); ++i) {

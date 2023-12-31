@@ -20,26 +20,26 @@ int main() {
 
 //------------chargement initial-------------------------------
 //
-//            Ouvrire(&fichier, "PERSONNEL-ANP_DZ.dat", 'N');
-//            Ouvrire(&fich, "MILITAIRE_INDEX.idx", 'N');
-//            Ouvrire(&Fi, "FORCE_ARME_INDEX.idx", 'N');
-//            Ouvrire(&F, "GRADE_INDEX.idx", 'N');
-//            Lecture = 0;
-//            Ecriture = 0;
-//            chargementInitial(fichier, 100000);
-//            printf("le cout de chargement initial est %d lecture et %d ecriture\n", Lecture, Ecriture);
-//            printfFichier("PERSONNEL-ANP_DZ.dat");
-//            printf("test\n");
-//            Fermer(fichier);
-//            Sauvegarde_IndexM(fich, indexM);
-//            Sauvegarde_IndexM(Fi, indexF);
-//            Sauvegarde_IndexM(F, indexG);
-//            Fermer(fich);
-//            Fermer(Fi);
-//            Fermer(F);
-//            printGradeIndex("GRADE_INDEX.idx");
-//            printMilitaireIndex("MILITAIRE_INDEX.idx");
-//            printForceIndex("FORCE_ARME_INDEX.idx");
+            Ouvrire(&fichier, "PERSONNEL-ANP_DZ.dat", 'N');
+    Ouvrire(&fich, "MILITAIRE_INDEX.idx", 'N');
+    Ouvrire(&Fi, "FORCE_ARME_INDEX.idx", 'N');
+    Ouvrire(&F, "GRADE_INDEX.idx", 'N');
+    Lecture = 0;
+    Ecriture = 0;
+    chargementInitial(fichier, 100000);
+    printf("le cout de chargement initial est %d lecture et %d ecriture\n", Lecture, Ecriture);
+    printfFichier("PERSONNEL-ANP_DZ.dat");
+    printf("test\n");
+    Fermer(fichier);
+    Sauvegarde_IndexM(fich, indexM);
+    Sauvegarde_IndexM(Fi, indexF);
+    Sauvegarde_IndexM(F, indexG);
+    Fermer(fich);
+    Fermer(Fi);
+    Fermer(F);
+    printGradeIndex("GRADE_INDEX.idx");
+    printMilitaireIndex("MILITAIRE_INDEX.idx");
+    printForceIndex("FORCE_ARME_INDEX.idx");
 
     //--------------------chafrgement d'index--------------------------
 

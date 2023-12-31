@@ -512,17 +512,16 @@ void chargementInitial(FILE *fichier, int nbenrg) {
     Ienrg ienrg;
     Menrg menrg,merng1,merng2;
     Adress adress;
-    Index index1;
     bool trouve = false;
     nb = 1;//on utilise i pour le parcour des elements
     i = 1;
     j = 0;
     FILE *Fi;
     char * ptr,*ptr1,*ptr3;
-    initIndex(&index1);
+    initIndex(&indexP);
     while (nb <= nbenrg) {
         enrg = creerEnrg();
-        rechDicoTableIndex(enrg.Matricule, &trouve, &k, index1);
+        rechDicoTableIndex(enrg.Matricule, &trouve, &k, indexP);
         if (trouve == false) {
             if (j < 1024) {
                 buffer.tab[j] = enrg;
@@ -544,7 +543,7 @@ void chargementInitial(FILE *fichier, int nbenrg) {
                 ptr3  = strdup(enrg.Grade);
                 merng2.indice = getIndiceGrade(ptr3);
 
-                insertionIndex(ienrg, k, &index1);
+                insertionIndex(ienrg, k, &indexP);
                 insertionIndexS(menrg, &indexM);
                 insertionIndexS(merng1,&indexF);
                 insertionIndexS(merng2,&indexG);
@@ -573,7 +572,7 @@ void chargementInitial(FILE *fichier, int nbenrg) {
                 ptr3  = strdup(enrg.Grade);
                 merng2.indice = getIndiceGrade(ptr3);
 
-                insertionIndex(ienrg, k, &index1);
+                insertionIndex(ienrg, k, &indexP);
                 insertionIndexS(menrg, &indexM);
                 insertionIndexS(merng1,&indexF);
                 insertionIndexS(merng2,&indexG);
@@ -586,7 +585,7 @@ void chargementInitial(FILE *fichier, int nbenrg) {
     aff_entete(fichier, 1, i);
     aff_entete(fichier, 2, j);
     Fermer(fichier);
-    Sauvegarde_Index(index1);
+    Sauvegarde_Index(indexP);
     affichIndexMilitaire(indexM);
 }
 
