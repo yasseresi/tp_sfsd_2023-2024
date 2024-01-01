@@ -21,7 +21,7 @@
  * @return The calculated age.
  */
 int calculateAge(date birthDate) {
-    currentDate.day = 1;
+    currentDate.day = 31;
     currentDate.month = 12;
     currentDate.year = 2023;
 
@@ -449,22 +449,17 @@ void insertionIndexS(Menrg menrg, IndexM *index){
  * @param j Pointer to store the record number where the military personnel is found.
  * @param fichier The file to search in.
  */
-void Rech_Militaires(int matricule, int *i, int *j, FILE *fichier) {
+void Rech_Militaires(int matricule, bool *existe , int *i, int *j, FILE *fichier) {
     *i = 0;
     *j = 0;
     int pos = 0;
     bool trouv  = false;
     rechDicoTableIndex(matricule, &trouv, &pos, indexP);
-    if (!trouv) {
-        printf("le militaire que vous recherchez n'exsite pas\n");
-    } else {
+    *existe = trouv ;
+    if (trouv) {
         *i = indexP.tab[pos].adress.nbBloc;
         *j = indexP.tab[pos].adress.nbEnrg;
-        printf(" le militaire que vous recherchez est dans le bloc %d et l'enregistrement %d\n", *i, *j);
         LireDir(fichier, *i, &buffer);
-        printf("le militaire est : %d\t%s\t%s\t%d/%d/%d\t%s\t%s\t%s\t%s\t%s\n", buffer.tab[*j].Matricule, buffer.tab[*j].Nom,
-               buffer.tab[*j].Prenom,buffer.tab[*j].Date_Naissance.day,buffer.tab[*j].Date_Naissance.month,buffer.tab[*j].Date_Naissance.year, buffer.tab[*j].Wilaya_Naissance, buffer.tab[*j].Region_militaire,
-               buffer.tab[*j].Grade, buffer.tab[*j].Groupe_sanguin, buffer.tab[*j].Force_armee);
     }
 }
 //***************************************************************************
@@ -601,7 +596,6 @@ void Chargement_indexM(FILE *Fi, IndexM *index) {
  */
 void chargementInitial(FILE *fichier, int nbenrg) {
 
-
     srand(time(NULL));
     tenrg enrg;
     int i, j, k, nb;
@@ -682,9 +676,7 @@ void chargementInitial(FILE *fichier, int nbenrg) {
     aff_entete(fichier, 2, j);
     Fermer(fichier);
     Sauvegarde_Index(indexP);
-    affichIndexMilitaire(indexM);
 }
-
 
 //****************************************************************
 
@@ -892,7 +884,7 @@ void SuppersionEnrg(FILE *fichier, Buffer *buf, int i, int j, Index *index1) {
  * @param matricule The record to be modified.
  * @param nouveauRegion The new military region to be assigned to the record.
  */
-void modifRegionMelitaire(int matricule, char *nouveauRegion) {
+void modifRegionMelitaire(int matricule, char *nouveauRegion, bool *existe) {
     int i, j, k;
     int clean;
     bool trouv;
@@ -900,6 +892,7 @@ void modifRegionMelitaire(int matricule, char *nouveauRegion) {
     Ouvrire(&fichier, "PERSONNEL-ANP_DZ.dat", 'A');
     Ouvrire(&fichier2, "MILITAIRE_INDEX.idx", 'A');
     rechDicoTableIndex(matricule, &trouv, &k, indexP);
+    *existe = trouv;
     if (trouv) {
         i = indexP.tab[k].adress.nbBloc;
         j = indexP.tab[k].adress.nbEnrg;

@@ -18,9 +18,6 @@ const char* algerianWilayas[58];
   const char *militaryRegions[6];
   const char *armedForces[8];
 
-
-
-
 //--------------------------les structures-----------------------------
 
 
@@ -97,7 +94,6 @@ typedef struct Tmbloc{
  Index indexP;
  IndexM indexM,indexF,indexG;
  date currentDate;
-
 
 
  int Lecture;

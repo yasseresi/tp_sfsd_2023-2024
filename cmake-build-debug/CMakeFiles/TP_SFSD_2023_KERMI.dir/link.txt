@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2023.3.2\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\TP_SFSD_2023_KERMI.dir/objects.a
+C:\msys64\mingw64\bin\ar.exe qc CMakeFiles\TP_SFSD_2023_KERMI.dir/objects.a @CMakeFiles\TP_SFSD_2023_KERMI.dir\objects1.rsp
+C:\msys64\mingw64\bin\cc.exe  -Wall -Wextra -std=c11 -g  -static-libgcc -static-libstdc++ -Wl,--whole-archive CMakeFiles\TP_SFSD_2023_KERMI.dir/objects.a -Wl,--no-whole-archive -o TP_SFSD_2023_KERMI.exe -Wl,--out-implib,libTP_SFSD_2023_KERMI.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\TP_SFSD_2023_KERMI.dir\linkLibs.rsp
