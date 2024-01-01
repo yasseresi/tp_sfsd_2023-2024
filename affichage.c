@@ -9,6 +9,11 @@
 #include "machine_abtraite.h"
 
 
+/**
+ * Prints the index table for primary records in central memory.
+ *
+ * @param index The index table for primary records.
+ */
 void affichIndexPrimaire(Index index) {
     for (int i = 0; i < index.nb; ++i) {
         printf(" %d/ le matricule %d dans  %d %d \n", i, index.tab[i].cle, index.tab[i].adress.nbBloc,
@@ -16,16 +21,33 @@ void affichIndexPrimaire(Index index) {
     }
 }
 
+/**
+ * Prints the index table for military records in central memory.
+ *
+ * @param index The index table for military records.
+ */
 void affichIndexMilitaire(IndexM index) {
     for (int i = 0; i < index.nb; ++i) {
         printf(" %d/ le matricule %d de  %s\n", i, index.tab[i].cle, getRegionAssocie(index.tab[i].indice));
     }
 }
+
+/**
+ * Prints the index table for force records in central memory.
+ *
+ * @param index The index table for force records.
+ */
 void affichIndexForce(IndexM index){
     for (int i = 0; i < index.nb; ++i) {
         printf(" %d/ le matricule %d de %s \n",i,index.tab[i].cle, getForceAssocie(index.tab[i].indice));
     }
 }
+
+/**
+ * Prints the index table for grade records in central memory.
+ *
+ * @param index The index table for grade records.
+ */
 void affichIndexGrade(IndexM index){
     for (int i = 0; i < index.nb; ++i) {
         printf(" %d/ le matricule %d de %s \n",i,index.tab[i].cle, getGradeAssocie(index.tab[i].indice));
@@ -34,6 +56,26 @@ void affichIndexGrade(IndexM index){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * Prints the content of a file.
+ * 
+ * @param nomFichier The name of the file to be printed.
+ */
 void printfFichier(char *nomFichier) {
     FILE *f ;
     int s = 1024;
@@ -53,7 +95,11 @@ void printfFichier(char *nomFichier) {
 }
 
 
-
+/**
+ * Prints the primary index of a file.
+ * 
+ * @param nomFichier The name of the file.
+ */
 void printIndexPrimaire(char *nomFichier) {
     FILE *f;
     int s = 1024;
@@ -75,6 +121,12 @@ void printIndexPrimaire(char *nomFichier) {
     }
     Fermer(f);
 }
+
+/**
+ * Prints the military index of a file.
+ * 
+ * @param nomFichier The name of the file.
+ */
 void printMilitaireIndex(char *nomFichier) {
     FILE *f;
     int s = 1024;
@@ -95,6 +147,12 @@ void printMilitaireIndex(char *nomFichier) {
     }
     Fermer(f);
 }
+
+/**
+ * Prints the force index of a file.
+ * 
+ * @param nomFichier The name of the file.
+ */
 void printForceIndex(char *nomFichier) {
     FILE *f;
     int s = 1024;
@@ -115,6 +173,12 @@ void printForceIndex(char *nomFichier) {
     }
     Fermer(f);
 }
+
+/**
+ * Prints the grade index of a file.
+ * 
+ * @param nomFichier The name of the file.
+ */
 void printGradeIndex(char *nomFichier) {
     FILE *f;
     int s = 1024;
